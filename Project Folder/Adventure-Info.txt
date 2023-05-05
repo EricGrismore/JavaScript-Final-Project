@@ -1,0 +1,15 @@
+Adventure How to play Information:
+
+This game is a simple text and type adventure game. How it works id simple
+
+In the white block, type in your command of the following commands..
+
+Commands:
+-go (what direction it gives you)
+-quit
+-scout
+-end (to end the game)
+
+..Then get prepared for the adventure ahead.
+
+Make sure you really read the text, who knows, something may happen all so suddenly. >:)

@@ -1,0 +1,204 @@
+﻿body{
+    background-image:url('../media/SoccerField.jpg');
+    background-repeat:no-repeat;
+    background-color:rgb(22, 22, 22);
+    background-size:1050px auto;
+    background-position: left 50% top 260%;
+    border-color:black;
+    border-style:bold;
+    border-style: ridge;
+    border-top: none;
+    border-bottom: none;
+  
+  }
+  #runner {
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+  #Socball {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: none;
+    margin-left:30em;
+    top:280px;
+  
+  }
+  #Defend {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: none;
+    margin-left:50em;
+    top:300px;
+  
+  }
+  #Defender {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: none;
+    margin-left:59em;
+    top:-120px;
+  
+  }
+  p{
+    color:steelblue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    border-color:black;
+    border-style:bold;
+    border-style: ridge;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  input{
+      text-align:center;
+  }
+  #coords{
+      position:absolute;
+      right:100px;
+      top:97px;
+  }
+  section{
+      width:1000px;
+      height:600px;
+  }
+  button{
+      width:210px;
+      padding:10px;
+      color:white;
+      font-style: bold;
+      background-color:darkgreen;
+      
+      
+  }
+  button:hover{
+    opacity:.85;
+  }
+  h1{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgba(106, 114, 146, 0.616);
+    text-align: center;
+    border-width: 10px;
+    border-color:darkred;
+    border-style: ridge;
+    border-left: none;
+    border-right: none;
+  }
+  a{
+    font-family: Arial, Helvetica, sans-serif;
+    color:crimson;
+  }
+
+/*For screen optifying on different platforms*/
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%; 
+  float: left;
+  padding: 15px; 
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-m-1 {
+      width: 8.33%;
+  }
+
+  .col-m-2 {
+      width: 16.66%;
+  }
+
+  .col-m-3 {
+      width: 25%;
+  }
+
+  .col-m-4 {
+      width: 33.33%;
+  }
+
+  .col-m-5 {
+      width: 41.66%;
+  }
+
+  .col-m-6 {
+      width: 50%;
+  }
+
+  .col-m-7 {
+      width: 58.33%;
+  }
+
+  .col-m-8 {
+      width: 66.66%;
+  }
+
+  .col-m-9 {
+      width: 75%;
+  }
+
+  .col-m-10 {
+      width: 83.33%;
+  }
+
+  .col-m-11 {
+      width: 91.66%;
+  }
+
+  .col-m-12 {
+      width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+      width: 8.33%;
+  }
+
+  .col-2 {
+      width: 16.66%;
+  }
+
+  .col-3 {
+      width: 25%;
+  }
+
+  .col-4 {
+      width: 33.33%;
+  }
+
+  .col-5 {
+      width: 41.66%;
+  }
+
+  .col-6 {
+      width: 50%;
+  }
+
+  .col-7 {
+      width: 58.33%;
+  }
+
+  .col-8 {
+      width: 66.66%;
+  }
+
+  .col-9 {
+      width: 75%;
+  }
+
+  .col-10 {
+      width: 83.33%;
+  }
+
+  .col-11 {
+      width: 91.66%;
+  }
+
+  .col-12 {
+      width: 100%;
+  }
+}

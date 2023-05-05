@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Soccer Game</title>
+<link rel="stylesheet" href="css/Soccerplayer.css" />
+</head>
+<body>
+  <h1>Soccer Game Planner</h1>
+  
+    <p>This game is set for those who love to plan out soccer games of there own.<br>
+    Or perhaps those that want to plan out there next moves in a real soccer game.<br>
+    Eitherway this game is simple. Click buttons to move your character to score a sweet goal!!</p>
+
+<article>
+<section>
+<div id ="runner">
+<img alt="Duckrun" src="media/Soccer1.png" id ="Socball" />
+<img alt="Duckrun" src="media/Soccer2.png" id ="Defend" />
+<img alt="Duckrun" src="media/Soccer3.png" id ="Defender" />
+
+</div>
+</form>
+<section style="opacity:.8;padding-top:450px;padding-left:25%;height:100px;">
+<p style="text-align:center;">
+<button id="down">Player Down</button>
+<button id="up">Player Up</button>
+<button id="right">Player Right</button>
+<button id="left">Player Left</button>
+<button id="stop">Halt Player</button>
+</p>
+</form>
+<script>
+var id;
+var posX=0;
+var posY=0;
+var elem = document.getElementById("Socball"); 
+
+document.getElementById("down").addEventListener("click",function() {
+  var id = setInterval(frame, 2);
+  posY=elem.y;
+  posX=elem.x; 
+  function frame() {
+    document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+    if (posY>=575) {
+      clearInterval(id);
+    } else {
+      posY++; 
+      elem.style.top = posY + 'px'; 
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+  }
+});
+
+document.getElementById("up").addEventListener("click",function() {
+  var id = setInterval(frame, 2);
+  posY=elem.y;
+  posX=elem.x; 
+  function frame() {
+    document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+    if (posY <= -69) {
+      clearInterval(id);
+    } else {
+      posY--; 
+      elem.style.top = posY + 'px'; 
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+  }
+});
+
+document.getElementById("right").addEventListener("click",function() {
+  posY=elem.y;
+  posX=elem.x;
+  var id = setInterval(frame, 2);
+  function frame() {
+    document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+    if (posX >= 650) {
+      clearInterval(id);
+    } else {
+      posX++;
+      elem.style.left = posX + 'px'; 
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+  }
+});
+
+document.getElementById("left").addEventListener("click",function() {
+  posY=elem.y;
+  posX=elem.x; 
+  var id = setInterval(frame, 2);
+  function frame() {
+    document.getElementById("stop").addEventListener("click",function(){clearInterval(id);});
+    if (posX <= -280 && posx <= 750) {
+      clearInterval(id);
+    } else {
+      posX--;
+      elem.style.left = posX + 'px'; 
+      document.getElementById("xCoord").value=elem.x;
+      document.getElementById("yCoord").value=elem.y;
+    }
+  }
+});
+
+</script>
+<div id="coords">
+<p> X Coordinate:<input type="text" id="xCoord" /><br> 
+ Y Coordinate:<input type="text" id="yCoord" /></p>
+ </div>
+ <a href="Soccer-Info.txt" style="font-size: 20px; padding-left:290px">Soccer Game How To Play</a>
+ <a href="MainNavPage.html" style="font-size: 20px; top: 0; padding-left: 20px;">Main Page</a>
+ <footer>
+  <p style="text-align:center;"> &copy; Eric Grismore 2023</p>
+</footer>
+ </article>
+</body>
+</html>

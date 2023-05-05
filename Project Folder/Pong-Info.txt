@@ -1,0 +1,10 @@
+How to play PONG-PONG:
+
+The red block can only be destroyed my the white ball. 
+
+Move the paddle with you mouse to bounce the ball towards the blocks. 
+
+Once all blocks have been destroyed, only then will you win.
+
+Be careful though, if you let the ball get passed the paddle and fall into the void, you lose a life. 
+Lose all five lives and it results in a game over. Makeing you restart the game entirely.
